@@ -1,0 +1,11 @@
+package com.app.login.business;
+
+import com.app.login.dao.LoginDAO;
+import com.app.login.model.Login;
+
+public final class LoginBusiness {
+
+	public boolean isValidCredencial(Login login) {
+		return new LoginDAO().isValidCredencial(login);
+	}
+}

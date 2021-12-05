@@ -1,0 +1,20 @@
+package com.app.login.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.app.login.model.Login;
+
+@RestController
+@RequestMapping("/app/login")
+public final class LoginController {
+
+	@PostMapping("/isvalid")
+	public boolean isValidCredencial(@RequestBody Login login) {
+		System.out.println(login.toString());
+		return true;
+	}
+	
+}

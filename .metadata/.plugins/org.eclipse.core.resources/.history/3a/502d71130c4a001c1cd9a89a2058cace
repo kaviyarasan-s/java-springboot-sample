@@ -1,0 +1,22 @@
+package com.app.model;
+
+import java.io.Serializable;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public final class Audit implements Serializable{
+
+	private static final long serialVersionUID = 1788124340144918214L;
+
+	private int createdBy;
+	
+	private long createdOn;
+	
+	private int modifiedBy;
+	
+	private long modifiedOn;
+	
+}

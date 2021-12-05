@@ -1,0 +1,31 @@
+package com.app.util;
+
+import java.util.Random;
+
+import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.lang3.RandomUtils;
+
+public final class StringUtil {
+
+	private StringUtil() {}
+	
+	public static boolean isNull(String inputStr) {
+		return inputStr == null;
+	}
+	
+	public static boolean isNotNull(String inputStr) {
+		return inputStr != null;
+	}
+	
+	public static boolean isNullOrEmpty(String inputStr) {
+		return isNull(inputStr) ||  inputStr.isEmpty();
+	}
+	
+	public static boolean isEmpty(String inputStr) {
+		return isNotNull(inputStr) && inputStr.trim().isEmpty();
+	}
+	
+	public static String generateRandomString() {
+		return RandomStringUtils.randomAlphanumeric(15);
+	}
+}

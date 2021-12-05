@@ -1,0 +1,10 @@
+package com.app.user.business;
+
+import com.app.user.model.User;
+
+public final class UserBusiness {
+
+	public User signup(User user) {
+		
+	}
+}

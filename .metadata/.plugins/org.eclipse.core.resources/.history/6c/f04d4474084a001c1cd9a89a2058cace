@@ -1,0 +1,20 @@
+package com.app.model;
+
+import java.io.Serializable;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public final class Audit implements Serializable{
+
+	private int createdBy;
+	
+	private long createdOn;
+	
+	private int modifiedBy;
+	
+	private long modifiedOn;
+	
+}

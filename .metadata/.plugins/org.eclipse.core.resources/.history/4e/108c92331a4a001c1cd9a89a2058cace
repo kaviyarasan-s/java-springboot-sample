@@ -1,0 +1,21 @@
+package com.app.db;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public final class InlineDB {
+	
+	private InlineDB() {}
+
+	protected static final Map<String, String> LOGIN = new HashMap<>(); 
+	
+	public static Map<String, String> getLoginMap(){
+		return LOGIN;
+	}
+	
+protected static final Map<String, String> SESSION = new HashMap<>(); 
+	
+	public static Map<String, String> getSessionMap(){
+		return SESSION;
+	}
+}

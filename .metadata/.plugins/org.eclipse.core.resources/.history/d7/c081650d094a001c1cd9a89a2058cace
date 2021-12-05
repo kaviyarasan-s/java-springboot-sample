@@ -1,0 +1,13 @@
+package com.app.util;
+
+import java.util.Calendar;
+
+public class MyTestUtil {
+
+	public static void main(String[] args) {
+		Calendar calender = Calendar.getInstance();
+		
+		calender.setTimeInMillis(1637416115657l);
+		System.out.println(calender.getTime());
+	}
+}

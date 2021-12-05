@@ -1,0 +1,29 @@
+package com.app.user.dao;
+
+import java.util.Map;
+
+import com.app.db.InlineDB;
+import com.app.user.model.User;
+
+public final class UserDAO {
+
+
+	private static long userId = 0;
+
+	
+	public User signup(User user) {
+		user.setUserId(addUser(user));
+		return user;
+	}
+	
+	
+	private long addUser(User user) {
+		long id = ++userId;
+		InlineDB.getUserMap().put(id, getUserObject(user));
+		return id;
+	}
+	
+	private Map<String, String> getUserObject(User user){
+		return null;
+	}
+}

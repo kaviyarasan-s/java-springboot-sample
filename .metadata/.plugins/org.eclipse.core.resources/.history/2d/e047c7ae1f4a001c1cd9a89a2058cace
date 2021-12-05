@@ -1,0 +1,18 @@
+package com.app.login.business;
+
+import com.app.db.InlineDB;
+import com.app.login.dao.LoginDAO;
+import com.app.login.model.Login;
+
+public final class LoginBusiness {
+
+	public boolean isValidCredencial(Login login) {
+		return new LoginDAO().isValidCredencial(login);
+	}
+	
+	public boolean isSessionExpired(Login login) {
+		return InlineDB.getSessionMap().get(login.getUsername()) != null;
+	}
+	
+}
+

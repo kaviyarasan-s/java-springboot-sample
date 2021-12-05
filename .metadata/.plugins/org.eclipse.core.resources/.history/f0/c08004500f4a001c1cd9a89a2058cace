@@ -1,0 +1,19 @@
+package com.app.model;
+
+import java.io.Serializable;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public final class Login implements Serializable{
+
+	private String username;
+	
+	private String password;
+	
+	private boolean isSessionExpired;
+	
+	private String sessionKey;
+}

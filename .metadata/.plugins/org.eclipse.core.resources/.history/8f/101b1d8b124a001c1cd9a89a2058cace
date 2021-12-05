@@ -1,0 +1,11 @@
+package com.app.db;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public final class InlineDB {
+	
+	private InlineDB() {}
+
+	public static final Map<String, String> LOGIN = new HashMap<>(); 
+}

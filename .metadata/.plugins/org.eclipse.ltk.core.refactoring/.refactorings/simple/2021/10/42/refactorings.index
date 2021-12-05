@@ -1,0 +1,18 @@
+1633970035511	Rename resource 'Config.java'
+1634138959443	Delete element
+1634138979721	Move compilation unit
+1634138983156	Delete element
+1634139008097	Rename package 'com.app.simple'
+1634139036129	Move compilation unit
+1634139043019	Rename type 'TestPojo'
+1634139077844	Rename type 'TestController'
+1634139088919	Rename type 'Test'
+1634140436983	Move 'views' to 'src'
+1634140443116	Move 'views' to 'main'
+1634140730661	Move 'views' to 'src'
+1634143772898	Move 'views' to 'webapp'
+1634143793843	Move 'WEB-INF' to 'main'
+1634143796812	Move 'webapp' to 'WEB-INF'
+1634144940216	Move 'webapp' to 'main'
+1634144944311	Move 'WEB-INF' to 'webapp'
+1634144948603	Move 'views' to 'WEB-INF'

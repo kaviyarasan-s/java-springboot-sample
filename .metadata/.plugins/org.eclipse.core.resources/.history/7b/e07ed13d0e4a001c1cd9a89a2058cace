@@ -1,0 +1,18 @@
+package com.app.enums;
+
+public enum BloodGroup {
+
+	O_POSITIVE {
+		
+	},
+	
+	O_NEGATIVE{
+		
+	},
+	
+	A_POSITIVE{
+		
+	}
+	
+	
+}

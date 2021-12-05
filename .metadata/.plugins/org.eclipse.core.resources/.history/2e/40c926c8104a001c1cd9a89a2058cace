@@ -1,0 +1,28 @@
+package com.app.util;
+
+public final class StringUtil {
+
+	private StringUtil() {}
+	
+	public static boolean isNull(String inputStr) {
+		return inputStr == null;
+	}
+	
+	public static boolean isNotNull(String inputStr) {
+		return inputStr != null;
+	}
+	
+	public static boolean isNullOrEmpty(String inputStr) {
+		if(isNull(inputStr) ||  inputStr.isEmpty()) {
+			return true;
+		}
+		return false;
+	}
+	
+	public static boolean isEmpty(String inputStr) {
+		if(isNotNull(inputStr) && inputStr.trim().isEmpty()) {
+			return true;
+		}
+		return false;
+	}
+}

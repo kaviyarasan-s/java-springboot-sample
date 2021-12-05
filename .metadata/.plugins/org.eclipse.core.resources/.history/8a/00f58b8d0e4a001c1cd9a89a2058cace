@@ -1,0 +1,18 @@
+package com.app.enums;
+
+public enum BloodGroup {
+
+	O_POSITIVE("O+"),
+
+	O_NEGATIVE("O-"),
+
+	A_POSITIVE("A+"),
+
+	A_NEGATIVE("A-");
+
+	public String value;
+
+	BloodGroup(String value) {
+		this.value= value;
+	}
+}

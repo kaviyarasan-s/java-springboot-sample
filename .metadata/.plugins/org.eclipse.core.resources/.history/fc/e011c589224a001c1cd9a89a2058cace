@@ -1,0 +1,14 @@
+package com.app.util;
+
+import java.lang.reflect.Method;
+
+import com.app.model.User;
+
+public class MyTestUtil {
+
+	public static void main(String[] args) throws InterruptedException {
+		for(Method method : User.class.getDeclaredMethods()) {
+			System.out.println( method.getAnnotations());
+		}
+	}
+}

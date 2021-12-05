@@ -1,0 +1,11 @@
+
+r
+java:S1118":Add a private constructor to hide the implicit public one.(¥˜ô¥úÿÿÿÿ8¢×…òÓ/H®RMAJORZ
+CODE_SMELL
+[	java:S108
+")Either remove or fill this block of code.( †õ›8¢×…òÓ/H¯RMAJORZ
+CODE_SMELL
+^
+java:S1481
+"+Remove this unused "method" local variable.( †õ›8¢×…òÓ/H°RMINORZ
+CODE_SMELL

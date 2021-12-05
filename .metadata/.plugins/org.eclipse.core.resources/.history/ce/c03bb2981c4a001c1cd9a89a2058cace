@@ -1,0 +1,12 @@
+package com.app.util;
+
+public class MyTestUtil {
+
+	public static void main(String[] args) throws InterruptedException {
+		SessionMap<String, String> sm= new SessionMap<>();
+		sm.put("kavi", "test");
+		System.out.println(sm.get("key"));
+		Thread.sleep(2000);
+		System.out.println(sm.get("key"));
+	}
+}

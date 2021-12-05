@@ -1,0 +1,14 @@
+package com.app.constants;
+
+public final class StringConstants {
+	
+	private StringConstants() {}
+
+	public static final String FRONT_SLASH = "/";
+	public static final String BACK_SLASH = "/";
+	public static final String DOT = ".";
+	public static final String AT = "@";
+	public static final String SINGLE_SPACE = " ";
+	public static final String EMPTY = "";
+	
+}

@@ -1,0 +1,51 @@
+package com.app.util;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+
+public class SessionMap<K, V> extends ConcurrentHashMap<K, V> {
+
+	private static final Map<String, String> SESSION = new HashMap<>();
+
+	private static final long serialVersionUID = 3623356745496049442L;
+	
+	private static long DELAY; 
+	
+	public SessionMap() {
+		DELAY = 1000; // 1s
+	}
+	
+	public SessionMap(long timeDelay) {
+		DELAY = timeDelay;
+	}
+
+	@Override
+	public V get(Object key) {
+		V value = super.get(key);
+		if (SESSION.containsKey(value))
+			return value;
+		else
+			return null;
+	}
+	
+	@Override
+	public V put(K key, V value) {
+		TimerTask task = new TimerTask() {
+			
+			@Override
+			public void run() {
+				SESSION.remove(key);
+			}
+		};
+		Timer timer = new Timer();
+		timer.schedule(task, DELAY);
+		return super.put(key, value);
+	}
+
+}
